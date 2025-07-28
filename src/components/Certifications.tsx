@@ -4,17 +4,36 @@ import { Award, Calendar, ExternalLink } from 'lucide-react';
 const Certifications = () => {
   const certifications = [
     {
-      title: "Java Programming Certification",
-      issuer: "Oracle",
-      date: "2024",
-      credentialId: "OCA-2024-001",
-      description: "Comprehensive certification covering Java fundamentals, OOP concepts, and advanced programming techniques.",
-      skills: ["Java", "OOP", "Data Structures", "Algorithms"],
+ title: "Web Development Bootcamp",
+      issuer: "Udemy",
+      date: "2022",
+      credentialId: "WDB-2022-789",
+      description: "Full-stack web development course covering HTML, CSS, JavaScript, and modern frameworks.",
+      skills: ["HTML5", "CSS3", "JavaScript", "Bootstrap", "Responsive Design"],
       verifyUrl: "#"
     },
+
+    {
+      title: "Flutter Development Course",
+      issuer: "Scope India",
+      date: "2023",
+      credentialId: "GD-345678",
+      skills: ["Flutter", "Dart", "Mobile Development", "UI/UX Design"],
+      description: "In-depth course on Flutter for building cross-platform mobile applications with a focus on UI/UX design.",
+      verifyUrl: "#"
+    },
+   {
+      title: "Data Science",
+      issuer: "Scope India",
+      date: "2025",
+      credentialId: "DS-2025-123",
+      description: "Comprehensive course on data science fundamentals, including data analysis, machine learning, and visualization.",
+      skills: ["Python", "Data Analysis", "Machine Learning", "Pandas", "NumPy"],
+      verifyUrl: "#"
+   },
     {
       title: "React Developer Certification",
-      issuer: "Meta",
+      issuer: "Oneteam",
       date: "2023",
       credentialId: "META-REACT-2023",
       description: "Advanced React certification covering hooks, state management, and modern React development practices.",
@@ -37,24 +56,6 @@ const Certifications = () => {
       credentialId: "IBM-DB-2023",
       description: "Comprehensive course on database design, SQL optimization, and database administration.",
       skills: ["SQL", "Database Design", "Query Optimization", "Data Modeling"],
-      verifyUrl: "#"
-    },
-    {
-      title: "Web Development Bootcamp",
-      issuer: "Udemy",
-      date: "2022",
-      credentialId: "WDB-2022-789",
-      description: "Full-stack web development course covering HTML, CSS, JavaScript, and modern frameworks.",
-      skills: ["HTML5", "CSS3", "JavaScript", "Bootstrap", "Responsive Design"],
-      verifyUrl: "#"
-    },
-    {
-      title: "Data Structures & Algorithms",
-      issuer: "Coursera",
-      date: "2022",
-      credentialId: "DSA-2022-123",
-      description: "Advanced course on data structures, algorithms, and computational complexity analysis.",
-      skills: ["Algorithms", "Data Structures", "Problem Solving", "Time Complexity"],
       verifyUrl: "#"
     }
   ];
@@ -99,7 +100,7 @@ const Certifications = () => {
               <div className="mb-6">
                 <h4 className="text-white font-semibold mb-2 text-sm">Skills Covered:</h4>
                 <div className="flex flex-wrap gap-2">
-                  {cert.skills.map((skill, skillIndex) => (
+                  {(cert.skills ?? []).map((skill, skillIndex) => (
                     <span
                       key={skillIndex}
                       className="bg-slate-700 text-green-400 px-2 py-1 rounded text-xs font-medium"

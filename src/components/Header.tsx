@@ -54,7 +54,7 @@ const Header = () => {
             ))}
             <div className="flex items-center space-x-4">
               <a
-                href="https://github.com"
+                href="https://github.com/anirudhb2001"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-300 hover:text-blue-400 transition-colors duration-200"
@@ -62,7 +62,7 @@ const Header = () => {
                 <Github size={20} />
               </a>
               <a
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/in/anirudh-b-nair-9745elkm/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-300 hover:text-blue-400 transition-colors duration-200"

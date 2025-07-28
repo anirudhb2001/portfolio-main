@@ -4,32 +4,51 @@ import { GraduationCap, Calendar, MapPin } from 'lucide-react';
 const Education = () => {
   const educationData = [
     {
-      degree: "Bachelor of Technology in Computer Science & Engineering",
-      institution: "University Name",
-      location: "City, State",
-      duration: "2021 - 2025",
-      gpa: "8.5/10.0",
-      coursework: [
-        "Data Structures & Algorithms",
-        "Object-Oriented Programming",
-        "Database Management Systems",
-        "Web Development",
-        "Software Engineering",
-        "Computer Networks"
+      degree: "Bachelor of Technology",
+      field: "Computer Science & Engineering",
+      institution: "College of Engineering Kidangoor",
+      location: "Kottayam, Kerala",
+      duration: "2023 - 2026",
+     // grade: "CGPA: 8.5/10",
+      highlights: [
+        "Relevant Coursework: Data Structures, Algorithms, DBMS, OOP",
+        "Active member of Computer Science Society",
+        // "Participated in multiple coding competitions and hackathons"
       ]
     },
     {
-      degree: "Higher Secondary Certificate (12th Grade)",
-      institution: "School Name",
-      location: "City, State",
-      duration: "2019 - 2021",
-      gpa: "95%",
-      coursework: [
-        "Mathematics",
-        "Physics",
-        "Chemistry",
-        "Computer Science"
+      degree: "Diploma in Computer Engoineering",
+      field: "Computer Science",
+      institution: "Government Polytechnic College, Pala",
+      location: "Kottayam, Kerala",
+      duration: "2019 - 2022",
+      grade: "first class",
+      highlights: [
+        "Specialized in software development and programming languages",
+        "Developed several projects in HTML,CSS and JavaScript",
+        "Member of the college union and technical club"
       ]
+    },
+    {
+      degree: "Higher Secondary Education",
+      field: "Science Stream (PCM)",
+      institution: "St. Thomas HSS, Pala",
+      location: "kottayam, Kerala", 
+      duration: "2017 - 2019",
+      grade: "Percentage: 80%",
+      highlights: [
+        "Mathematics, Physics, Chemistry focus",
+        "Computer Science as additional subject",
+        "School programming club member"
+      ]
+    },
+    {
+degree: "Secondary School Certificate",
+      field: "General Education",
+      institution: "St. Joseph's HSS, Vilakkumadom",
+      location: "Kottayam, Kerala",
+      duration: "2016 - 2017",
+      grade: "98%",
     }
   ];
 
@@ -57,7 +76,7 @@ const Education = () => {
                 </div>
                 <div className="mt-4 lg:mt-0 text-right">
                   <div className="bg-green-600 text-white px-4 py-2 rounded-lg font-semibold mb-2">
-                    {edu.gpa}
+                    {edu.grade}
                   </div>
                 </div>
               </div>
@@ -76,14 +95,16 @@ const Education = () => {
               <div>
                 <h4 className="text-white font-semibold mb-3">Relevant Coursework:</h4>
                 <div className="grid grid-cols-2 md:grid-cols-3 gap-2">
-                  {edu.coursework.map((course, courseIndex) => (
-                    <span
-                      key={courseIndex}
-                      className="bg-slate-700 text-gray-300 px-3 py-2 rounded-lg text-sm"
-                    >
-                      {course}
-                    </span>
-                  ))}
+                 {edu.highlights && (
+  <div>
+    <h4 className="text-white font-semibold mb-3">Highlights:</h4>
+    <ul className="list-disc list-inside text-gray-300 space-y-1">
+      {edu.highlights.map((item, i) => (
+        <li key={i}>{item}</li>
+      ))}
+    </ul>
+  </div>
+)}
                 </div>
               </div>
             </div>

@@ -3,22 +3,23 @@ import { Briefcase, Calendar, MapPin, Users } from 'lucide-react';
 
 const Internships = () => {
   const experiences = [
-    {
-      position: "Software Development Intern",
-      company: "Tech Solutions Inc.",
-      location: "Bangalore, India",
-      duration: "Jun 2024 - Aug 2024",
-      type: "Remote",
-      description: "Developed web applications using React and Node.js, collaborated with senior developers on feature implementation, and participated in code reviews and agile development processes.",
+    
+      {
+      company: "Suffix solutions",
+      position: "Mobile App Development Intern",
+      duration: "Jan 2024 - Mar 2024",
+      location: "Kochi, India",
+      type: "Internship",
+      description: "Contributed to cross-platform mobile application development using Flutter, focusing on UI/UX implementation and API integration.",
       achievements: [
-        "Built a customer dashboard that improved user engagement by 25%",
-        "Optimized database queries reducing response time by 40%",
-        "Contributed to 3 major feature releases",
-        "Mentored 2 junior interns in JavaScript best practices"
+        "Built 5+ mobile app screens with pixel-perfect UI implementation",
+        "Integrated third-party APIs for payment and authentication",
+        "Participated in code reviews and learned best practices",
+        "Delivered features ahead of schedule consistently"
       ],
-      technologies: ["React", "Node.js", "MongoDB", "JavaScript", "Git"],
-      teamSize: "8-person development team"
+      technologies: ["Flutter", "Dart", "Firebase", "REST APIs", "UI/UX"]
     },
+    
     {
       position: "Frontend Developer Intern",
       company: "Digital Marketing Agency",

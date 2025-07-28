@@ -16,7 +16,7 @@ const Footer = () => {
             </p>
             <div className="flex space-x-4">
               <a
-                href="https://github.com"
+                href="https://github.com/anirudhb2001"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-slate-800 hover:bg-blue-600 p-2 rounded-lg transition-colors duration-200"
@@ -24,7 +24,7 @@ const Footer = () => {
                 <Github size={20} className="text-white" />
               </a>
               <a
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/in/anirudh-b-nair-9745elkm/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-slate-800 hover:bg-blue-600 p-2 rounded-lg transition-colors duration-200"
@@ -32,7 +32,7 @@ const Footer = () => {
                 <Linkedin size={20} className="text-white" />
               </a>
               <a
-                href="mailto:anirudh.bnair@email.com"
+                href="mailto:anirudhbelkm29@email.com"
                 className="bg-slate-800 hover:bg-blue-600 p-2 rounded-lg transition-colors duration-200"
               >
                 <Mail size={20} className="text-white" />
@@ -74,8 +74,8 @@ const Footer = () => {
           <div>
             <h4 className="text-white font-semibold mb-4">Get In Touch</h4>
             <div className="space-y-2 text-gray-400">
-              <p>📧 anirudh.bnair@email.com</p>
-              <p>📱 +91 9876543210</p>
+              <p>📧 anirudhbelkm29@email.com</p>
+              <p>📱 +91 9745923295</p>
               <p>📍 Kerala, India</p>
             </div>
             <div className="mt-4">
@@ -90,7 +90,7 @@ const Footer = () => {
         <div className="border-t border-slate-800 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="flex items-center space-x-2 text-gray-400">
-              <span>© {currentYear} Anirudh B Nair. Made with</span>
+              <span>© {currentYear} Anirudh B Nair</span>
               <Heart size={16} className="text-red-500" />
               <span>and</span>
               <Code size={16} className="text-blue-400" />

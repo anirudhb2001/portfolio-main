@@ -3,8 +3,8 @@ import { Mail, Phone, MapPin, Send, Github, Linkedin, Twitter } from 'lucide-rea
 
 const Contact = () => {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
+    name: 'Anirudh B. Nair',
+    email: 'anirudhbelkm29@gmail.com',
     subject: '',
     message: ''
   });
@@ -62,7 +62,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <p className="text-gray-400 text-sm">Phone</p>
-                  <p className="text-white font-medium">+91 9876543210</p>
+                  <p className="text-white font-medium">+91 9745923295</p>
                 </div>
               </div>
               
@@ -82,7 +82,7 @@ const Contact = () => {
               <h4 className="text-white font-semibold mb-4">Connect with me</h4>
               <div className="flex space-x-4">
                 <a
-                  href="https://github.com"
+                  href="https://github.com/anirudhb2001"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-slate-700 hover:bg-blue-600 p-3 rounded-lg transition-colors duration-200"
@@ -90,7 +90,7 @@ const Contact = () => {
                   <Github size={20} className="text-white" />
                 </a>
                 <a
-                  href="https://linkedin.com"
+                  href="https://www.linkedin.com/in/anirudh-b-nair-9745elkm/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-slate-700 hover:bg-blue-600 p-3 rounded-lg transition-colors duration-200"
@@ -98,7 +98,7 @@ const Contact = () => {
                   <Linkedin size={20} className="text-white" />
                 </a>
                 <a
-                  href="https://twitter.com"
+                  href="https://x.com/AnirudhB9"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-slate-700 hover:bg-blue-600 p-3 rounded-lg transition-colors duration-200"
