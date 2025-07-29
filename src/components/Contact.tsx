@@ -3,10 +3,10 @@ import { Mail, Phone, MapPin, Send, Github, Linkedin, Twitter } from 'lucide-rea
 
 const Contact = () => {
   const [formData, setFormData] = useState({
-    name: 'Anirudh B. Nair',
-    email: 'anirudhbelkm29@gmail.com',
-    subject: '',
-    message: ''
+    name: 'Enter your name',
+    email: 'Enter your email',
+    subject: 'Enter subject',
+    message: 'enter your message'
   });
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -52,7 +52,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <p className="text-gray-400 text-sm">Email</p>
-                  <p className="text-white font-medium">anirudh.bnair@email.com</p>
+                  <p className="text-white font-medium">anirudhbelkm29@gmail.com</p>
                 </div>
               </div>
               

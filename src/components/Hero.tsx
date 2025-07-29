@@ -24,7 +24,7 @@ const Hero = () => {
         </div>
         
         <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 animate-fade-in">
-          Anirudh B Nair
+          Anirudh B
         </h1>
         
         <p className="text-xl md:text-2xl text-gray-300 mb-4 animate-fade-in-delay-1">

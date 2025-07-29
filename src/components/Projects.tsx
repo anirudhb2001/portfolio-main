@@ -1,52 +1,27 @@
 import React from 'react';
-import { ExternalLink, Github, Code, Database, Smartphone } from 'lucide-react';
+import { ExternalLink, Github, Code, Database, } from 'lucide-react';
 
 const Projects = () => {
   const projects = [
     {
-      title: "E-Commerce Web Application",
-      description: "A full-stack e-commerce platform built with React and Node.js, featuring user authentication, product management, and payment integration.",
-      technologies: ["React", "Node.js", "MongoDB", "JavaScript", "CSS"],
+     title: "College Website",
+      description: "A responsive college website built with HTML, CSS, and JavaScript, showcasing college information, events, and admission details.",
+      technologies: ["JavaScript", "HTML5", "CSS"],
       icon: <Code size={24} />,
-      color: "bg-blue-600",
-      githubUrl: "#",
-      liveUrl: "#"
+      color: "bg-blue-500",
+      githubUrl: "https://github.com/anirudhb2001/Day2Project-Website",
+      liveUrl: "https://anirudhb2001.github.io/College_website/",
+      status: "Completed"
     },
-    {
-      title: "Task Management System",
-      description: "A comprehensive task management application with real-time updates, user collaboration, and project tracking capabilities.",
-      technologies: ["Java", "Spring Boot", "MySQL", "React", "Bootstrap"],
-      icon: <Database size={24} />,
-      color: "bg-green-600",
-      githubUrl: "#",
-      liveUrl: "#"
-    },
-    {
-      title: "Weather Forecast App",
-      description: "A mobile-responsive weather application that provides real-time weather data with location-based forecasts and interactive maps.",
-      technologies: ["Python", "Flask", "HTML5", "CSS", "JavaScript"],
-      icon: <Smartphone size={24} />,
-      color: "bg-purple-600",
-      githubUrl: "#",
-      liveUrl: "#"
-    },
-    {
-      title: "Student Management System",
-      description: "A desktop application for managing student records, grades, and academic performance with advanced reporting features.",
-      technologies: ["C++", "Qt", "SQLite", "CSS"],
-      icon: <Code size={24} />,
-      color: "bg-orange-600",
-      githubUrl: "#",
-      liveUrl: "#"
-    },
+   
     {
       title: "Portfolio Website",
       description: "A responsive portfolio website showcasing projects and skills with modern design principles and smooth animations.",
       technologies: ["React", "TypeScript", "Tailwind CSS", "HTML5"],
       icon: <Code size={24} />,
       color: "bg-pink-600",
-      githubUrl: "#",
-      liveUrl: "#"
+      githubUrl: "https://github.com/anirudhb2001",
+      liveUrl: "https://itsanirudhb.vercel.app/"
     },
     {
       title: "Data Visualization Dashboard",
@@ -54,10 +29,29 @@ const Projects = () => {
       technologies: ["Python", "Dash", "Plotly", "Pandas", "SQL"],
       icon: <Database size={24} />,
       color: "bg-indigo-600",
-      githubUrl: "#",
-      liveUrl: "#"
+      githubUrl: "https://github.com/anirudhb2001",
+      status: "In Progress"
+    },
+     {
+      title: "Portfolio Website",
+      description: "A responsive portfolio website showcasing projects and skills with modern design principles and smooth animations.",
+      technologies: ["React", "TypeScript", "Tailwind CSS", "HTML5"],
+      icon: <Code size={24} />,
+      color: "bg-pink-600",
+      githubUrl: "https://github.com/anirudhb2001",
+      liveUrl: "https://anirudhb2001.github.io/portfolio-main/"
+    },
+    {
+     title: "BMI Calculator",
+      description:"A simple mobile application built with Flutter that calculates Body Mass Index (BMI) based on user input.",
+      technologies: ["Flutter", "Dart"],
+      icon: <Code size={24} />,
+      color: "bg-green-500",
+      githubUrl:"https://github.com/anirudhb2001/portfolio-main",
+      liveUrl:"https://anirudhb2001.github.io/bmiapp/",
+    
     }
-  ];
+    ];
 
   return (
     <section id="projects" className="py-20 bg-slate-900">

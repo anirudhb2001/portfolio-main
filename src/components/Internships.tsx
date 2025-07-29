@@ -1,5 +1,5 @@
 import React from 'react';
-import { Briefcase, Calendar, MapPin, Users } from 'lucide-react';
+import { Briefcase, Calendar, MapPin } from 'lucide-react';
 
 const Internships = () => {
   const experiences = [
@@ -20,37 +20,21 @@ const Internships = () => {
       technologies: ["Flutter", "Dart", "Firebase", "REST APIs", "UI/UX"]
     },
     
+   
     {
-      position: "Frontend Developer Intern",
-      company: "Digital Marketing Agency",
-      location: "Mumbai, India",
-      duration: "Dec 2023 - Feb 2024",
-      type: "Hybrid",
-      description: "Focused on creating responsive web interfaces and improving user experience across multiple client projects using modern frontend technologies.",
-      achievements: [
-        "Redesigned 5 client websites with improved mobile responsiveness",
-        "Implemented SEO best practices increasing organic traffic by 30%",
-        "Created reusable component library reducing development time by 20%",
-        "Collaborated with design team to ensure pixel-perfect implementations"
-      ],
-      technologies: ["HTML5", "CSS3", "JavaScript", "Bootstrap", "Sass"],
-      teamSize: "5-person creative team"
-    },
-    {
-      position: "Data Analysis Intern",
-      company: "Analytics Startup",
-      location: "Pune, India",
+      position: "Data Science Intern",
+      company: "Scope India,Suffix solutions",
+      location: "Kochi, India",
       duration: "Jun 2023 - Aug 2023",
-      type: "On-site",
-      description: "Worked on data processing and visualization projects, developed Python scripts for data cleaning and analysis, and created interactive dashboards for business insights.",
+      type: "online internship",
+      description: "Assisted in data analysis and visualization projects, focusing on extracting insights from large datasets and creating interactive dashboards.",
       achievements: [
-        "Processed and analyzed datasets with 100K+ records",
-        "Created 10+ interactive dashboards for client reporting",
-        "Automated data cleaning processes saving 15 hours/week",
-        "Presented findings to stakeholders and clients"
+        "Analyzed datasets using Python and Pandas to derive actionable insights",
+        "Created interactive dashboards using Tableau for data visualization",
+        "Collaborated with a team of data scientists to improve data processing workflows",
+        "Presented findings to stakeholders, enhancing decision-making processes"
       ],
-      technologies: ["Python", "Pandas", "SQL", "Tableau", "Excel"],
-      teamSize: "3-person data team"
+      technologies: ["Python", "Pandas", "NumPy", "Tableau", "SQL"],
     }
   ];
 
@@ -94,10 +78,10 @@ const Internships = () => {
                   <MapPin size={16} />
                   <span>{exp.location}</span>
                 </div>
-                <div className="flex items-center space-x-2 text-gray-300">
+                {/* <div className="flex items-center space-x-2 text-gray-300">
                   <Users size={16} />
                   <span>{exp.teamSize}</span>
-                </div>
+                </div> */}
               </div>
               
               {/* Description */}

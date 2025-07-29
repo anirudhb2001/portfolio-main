@@ -1,5 +1,5 @@
 import React from 'react';
-import { Award, Calendar, ExternalLink } from 'lucide-react';
+import { Award, Calendar,  } from 'lucide-react';
 
 const Certifications = () => {
   const certifications = [
@@ -10,7 +10,7 @@ const Certifications = () => {
       credentialId: "WDB-2022-789",
       description: "Full-stack web development course covering HTML, CSS, JavaScript, and modern frameworks.",
       skills: ["HTML5", "CSS3", "JavaScript", "Bootstrap", "Responsive Design"],
-      verifyUrl: "#"
+      // verifyUrl: "#"
     },
 
     {
@@ -20,7 +20,7 @@ const Certifications = () => {
       credentialId: "GD-345678",
       skills: ["Flutter", "Dart", "Mobile Development", "UI/UX Design"],
       description: "In-depth course on Flutter for building cross-platform mobile applications with a focus on UI/UX design.",
-      verifyUrl: "#"
+      //verifyUrl: "#"
     },
    {
       title: "Data Science",
@@ -29,7 +29,7 @@ const Certifications = () => {
       credentialId: "DS-2025-123",
       description: "Comprehensive course on data science fundamentals, including data analysis, machine learning, and visualization.",
       skills: ["Python", "Data Analysis", "Machine Learning", "Pandas", "NumPy"],
-      verifyUrl: "#"
+     // verifyUrl: "#"
    },
     {
       title: "React Developer Certification",
@@ -38,7 +38,7 @@ const Certifications = () => {
       credentialId: "META-REACT-2023",
       description: "Advanced React certification covering hooks, state management, and modern React development practices.",
       skills: ["React", "JavaScript", "Redux", "Component Design"],
-      verifyUrl: "#"
+      //verifyUrl: "#"
     },
     {
       title: "Python Programming Certificate",
@@ -47,7 +47,7 @@ const Certifications = () => {
       credentialId: "PCAP-2023-456",
       description: "Professional certification in Python programming with focus on data structures and algorithm implementation.",
       skills: ["Python", "Data Analysis", "Web Development", "APIs"],
-      verifyUrl: "#"
+      //verifyUrl: "#"
     },
     {
       title: "Database Management Systems",
@@ -56,7 +56,7 @@ const Certifications = () => {
       credentialId: "IBM-DB-2023",
       description: "Comprehensive course on database design, SQL optimization, and database administration.",
       skills: ["SQL", "Database Design", "Query Optimization", "Data Modeling"],
-      verifyUrl: "#"
+     // verifyUrl: "#"
     }
   ];
 
@@ -111,14 +111,14 @@ const Certifications = () => {
                 </div>
               </div>
               
-              {/* Verify Link */}
-              <a
+              Verify Link
+              {/* <a
                 href={cert.verifyUrl}
                 className="flex items-center space-x-2 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition-colors duration-200 text-sm font-medium"
-              >
-                <ExternalLink size={14} />
+              > */}
+                {/* <ExternalLink size={14} />
                 <span>Verify Certificate</span>
-              </a>
+              </a> */}
             </div>
           ))}
         </div>

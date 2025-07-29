@@ -69,10 +69,14 @@ const Header = () => {
               >
                 <Linkedin size={20} />
               </a>
-              <button className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition-colors duration-200 flex items-center space-x-2">
-                <Download size={16} />
-                <span>Resume</span>
-              </button>
+              <a
+  href="/Anirudh_B_Nair_Resume (4).pdf"
+  download
+  className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg transition-colors duration-200 font-semibold"
+>
+  Download Resume
+</a>
+
             </div>
           </div>
 
